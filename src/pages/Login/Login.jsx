@@ -1,25 +1,20 @@
-import {Container, LeftContainer, RightContainer, Form, Link} from './style'
+import { Container, Form, Link } from './style'
 
 export function Login() {
 
     return (
         <Container>
+            <Form>
+                <h2>Login</h2>
+                <input type="text" placeholder='email' />
+                <input type="password" placeholder='senha' />
+                <input type="submit" className='Button' />
 
-            <LeftContainer>
-                <h1>Login</h1>
-            </LeftContainer>
-            <RightContainer>
+                <Link>Esqueci minha senha !</Link>
+            </Form>
 
-                <Form>
-                    <input type="text" placeholder='email' />
-                    <input type="password" placeholder='senha' />
 
-                    <Link>Esqueci minha senha!</Link>
 
-                    <input type="submit" />
-                </Form>
-
-            </RightContainer>
         </Container>
     )
 }

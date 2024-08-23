@@ -1,42 +1,45 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    background: ${({theme}) => theme.colors.grey };
     display: flex;
     align-content: center;
-    height: 100%;
-`
-
-export const LeftContainer = styled.div`
-    width: 60%;
-    background: #1E201E;
-    height: 100%;
-
-    display: flex;
     justify-content: center;
     align-items: center;
-`
-
-export const RightContainer = styled.div`
-    background: #fff;
-    width: 40%;
-    height: 520px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
 `
 
 export const Form = styled.form`
-    background: green;
+    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    justify-items: center;
+    width: 350px;
+    height: 500px;
+    border-radius:5px;
+
+    h2{
+        margin-top: 3rem;
+    }
+
+    input{
+        width: 200px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .Button{
+        padding: 0.5rem;
+        width: 200px;
+        height: 30px;
+    }
 `
 
 export const Link = styled.a`
-    color:grey;
+    color: grey;
     transition: 0.3s;
+    font-size: 14px;
     
 
     &:hover {
